@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 8000;
+const PORT = 7000;
 const cors = require('cors')
 app.use(cors())
 const rappers = {
@@ -34,6 +34,6 @@ app.get('/api/:rapperName', (req, res) => {
     console.log(req.params.rapperName)
 })
 app.listen(process.env.PORT || PORT, () => {
-    console.log(`server is running on ${PORT} you better go catch it`)
+    console.log('on 7000')
 })
 module.exports = rappers;
