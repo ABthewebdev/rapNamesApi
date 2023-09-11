@@ -33,6 +33,6 @@ app.get('/api/:rapperName', (req, res) => {
     }
     console.log(req.params.rapperName)
 })
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`server is running on ${PORT} you better go catch it`)
 })
