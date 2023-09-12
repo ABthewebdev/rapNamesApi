@@ -6,18 +6,18 @@ app.use(cors())
 const rappers = {
     '21 savage': {
         'age': 29,
-        'birthName': 'Sheyaa Bin Abraham-Lincoln',
-        'birthPlace': 'London, England'
+        'Birth Name': 'Sheyaa Bin Abraham-Lincoln',
+        'Birth Place': 'London, England'
     },
     'chance the rapper': {
         'age': 29,
-        'birthName': 'Chancelor Bennett',
-        'birthPlace': 'Chicago, Illinois'
+        'Birth Name': 'Chancelor Bennett',
+        'Birth Place': 'Chicago, Illinois'
     },
     'dylan': {
         'age': 29,
-        'birthName': 'Dylan',
-        'birthPlace': 'Dylan'
+        'Birth Name': 'Dylan',
+        'Birth Place': 'Dylan'
     },
 }
 app.get('/', (req, res) => {

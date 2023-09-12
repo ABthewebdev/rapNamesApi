@@ -1,5 +1,5 @@
 const rappers = require('./server')
-const inputValue = document.querySelector('input').value;
+const inputValue = document.querySelector('input').value.toLowerCase();
 document.querySelector('button').addEventListener('click', () => {
-    document.querySelector('h2').innerText = `Birth Name: ${rappers[inputValue]['birthName']}`
+    document.querySelector('h2').textContent = `Birth Name: ${rappers[inputValue]['Birth Name']}`
 })
