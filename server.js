@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = 7000;
 const cors = require('cors')
+const bodyParser = require('body-parser')
 app.use(cors())
+app.use(bodyParser.urlencoded({extended: true}))
 const rappers = {
     '21 savage': {
         'age': 29,
