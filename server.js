@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 7000;
+const PORT = 6000;
 const cors = require('cors')
 const bodyParser = require('body-parser')
 app.use(cors())
@@ -35,6 +35,7 @@ app.get('/api/:rapperName', (req, res) => {
     }
     console.log(req.params.rapperName)
 })
-app.listen(process.env.PORT || PORT, () => {
-    console.log('on 7000')
+app.listen( 6000, () => {
+    console.log('on 6000')
 })
+module.exports = rappers;
