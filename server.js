@@ -35,7 +35,6 @@ app.get('/api/:rapperName', (req, res) => {
     }
     console.log(req.params.rapperName)
 })
-app.listen( 6000, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log('on 6000')
 })
-module.exports = rappers;
